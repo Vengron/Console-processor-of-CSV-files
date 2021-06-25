@@ -3,4 +3,4 @@ project(uloha_8 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(uloha_8 main.c)
+add_executable(uloha_8 main.c BST.h BST.c)
