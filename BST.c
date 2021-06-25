@@ -77,7 +77,9 @@ void delete_node(Country *node) {
         return;
     }
     free(node->key);
-    free(node->names);
+    for (int i = 0; i < NAMES_NUM; ++i) {
+        free(node->names[i]);
+    }
     free(node);
 }
 
